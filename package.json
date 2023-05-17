@@ -13,7 +13,7 @@
   "@testing-library/react": "^13.4.0",
   "@testing-library/user-event": "^13.5.0",
   "antd": "^5.5.0",
-  "axios": "^1.4.0",
+  "lodash": "^4.17.21",
   "react": "^18.2.0",
   "react-dom": "^18.2.0",
   "react-helmet-async": "^1.3.0",
@@ -44,5 +44,17 @@
    "last 1 firefox version",
    "last 1 safari version"
   ]
+ },
+ "devDependencies": {
+  "eslint": "^8.31.0",
+  "eslint-config-prettier": "^8.6.0",
+  "eslint-plugin-prettier": "^4.2.1",
+  "eslint-plugin-react": "^7.31.11",
+  "eslint-plugin-react-hooks": "^4.6.0",
+  "prettier": "^2.8.2"
+ },
+ "lint-staged": {
+  "*.+(js|jsx)": "eslint --fix",
+  "*.+(json|scss|less|css|md)": "prettier --write"
  }
 }
